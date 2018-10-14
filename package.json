@@ -1,0 +1,33 @@
+{
+  "name": "nodejs-cucumber",
+  "version": "1.0.0",
+  "description": "nodejs-cucumber",
+  "main": "index.js",
+  "scripts": {
+    "start": "selenium-standalone start",
+    "selenium": "selenium-standalone install && selenium-standalone start",
+    "setup": "./node_modules/.bin/wdio",
+    "conf": "./node_modules/.bin/wdio wdio.conf.js",
+    "test": "npm run conf"
+  },
+  "author": "Meenakshi",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "pngjs": "^3.3.3",
+    "protractor": "^4.0.8",
+    "wdio-cucumber-reporter": "0.0.2",
+    "wdio-html-format-reporter": "^0.2.9",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-spec-reporter": "^0.1.5",
+    "webdriverio": "^4.13.2"
+  },
+  "devDependencies": {
+    "chromedriver": "^2.42.0",
+    "cucumber": "^5.0.2",
+    "selenium-standalone": "^5.9.1",
+    "wdio-chromedriver-service": "^0.1.3",
+    "wdio-cucumber-framework": "^2.2.7",
+    "wdio-selenium-standalone-service": "^0.0.7"
+  }
+}
